@@ -8,25 +8,27 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />  
 </head>
 <body>
-    <h1> COSA SCEGLI?</h1>
-    <div class="container">
-        <img src="assets/sasso.png" width="100" height="100" alt="" data-name="sasso" class="user-choice">
-        <img src="assets/carta.png" width="100" height="100" alt="" data-name="carta" class="user-choice">
-        <img src="assets/forbice.png" width="100" height="100" alt="" data-name="forbice" class="user-choice">
+    <div class="score-container">
+        Vince chi arriva prima a 5!!
+        <h3> Il tuo punteggio: <span id="player-score"> 0 </span></h3>
+        <h3> Il punteggio del computer: <span id="cpu-score"> 0 </span></h3>
     </div>
+
     <div id="choices">
         <div id="user-choice"></div>
         <div id="computer-choice"></div>
     </div>
     <div class="margin-top" id="result-div">
-        <h3 id="result"> </h3>
+        <h3 id="result"></h3>
         
     </div>
-    <div class="score-container">
-        <h3> Il tuo punteggio: <span id="player-score"> 0 </span></h3>
-        <h3> Il punteggio del computer: <span id="cpu-score"> 0 </span></h3>
+    <h4> COSA SCEGLI?</h4>
+    <div class="container">
+        <img src="assets/sasso.png" width="100" height="100" alt="" data-name="sasso" class="user-choice">
+        <img src="assets/carta.png" width="100" height="100" alt="" data-name="carta" class="user-choice">
+        <img src="assets/forbice.png" width="100" height="100" alt="" data-name="forbice" class="user-choice">
     </div>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="game-logic.js"></script>
 </body>

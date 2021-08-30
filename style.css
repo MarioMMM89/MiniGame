@@ -7,7 +7,7 @@ body {
 
 img{
     padding: 10px;
-    height: 100px;
+    height: 75px;
     margin: 5px 15px;
     width: auto;
 }
@@ -21,6 +21,7 @@ img{
     background-color: rgba(255, 0, 0, 0.3);
     padding: 5px 15px;
     margin-top: 7px;
+    padding-top: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px black;
     font-size: 0.9rem;
@@ -38,14 +39,15 @@ img{
     display: flex;
     align-content: center;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    min-height: 250px;
+    min-height: 330px;
+    margin-top: -25px;
 }
 
 #computer-choice {
     font-size: 1.3rem;
-    margin: 25px 0;
 }
 
 #user-choice, #computer-choice {
@@ -58,9 +60,5 @@ img{
 
 
 #result-div {
-    font-size: 110%;
-    padding: 2px;
-    border-radius: 10px;
-    width: 60%;
-    margin: 5px auto;
+    margin: -100px auto 1px auto;
 }

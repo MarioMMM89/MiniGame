@@ -28,6 +28,16 @@ for (var i= 0; i<possibleUserPicks.length; i++){
 }
 
 function onUserPick() {
+    if(score.userScore > 4){
+        score.userScore = 0;
+        score.cpuScore = 0;
+        return alert("HAI VINTO TU!!!\nLa partita è finita\nFai la tua scelta per iniziare nuova partita!")
+    }
+    if(score.cpuScore > 4) {
+        score.userScore = 0;
+        score.cpuScore = 0;
+        return alert("HA VINTO IL COMPUTER!!!\nLa partita è finita\nFai la tua scelta per iniziare nuova partita!")
+    }
     var userPickImage = "<img src='"+ this.src + "'/>";
     userPick = this.dataset.name;
     generateCpuPick();
